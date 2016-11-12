@@ -1,0 +1,654 @@
+*  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    font-family: 'Raleway';
+}
+
+.container {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.clearfix::before, .clearfix::after {
+content: "";
+display: table;
+clear:both;
+}
+
+section {
+    width:100%;
+    min-height: 500px;
+
+}
+
+/*SEKCJA HEADER*/
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+
+header .logo {
+    color: white;
+    float:left;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 40px;
+	font-size: 14px;
+    position:relative;
+    left: -70px;
+}
+
+header .logo span {
+    color: #26bfa1;
+    font-weight: bold;
+}
+
+header nav {
+    float:right;
+}
+
+header nav ul {
+    list-style-type: none;
+    color: white;
+    line-height: 40px;
+    text-transform: uppercase;
+	font-size: 14px;
+	font-weight: normal;
+	}
+
+header nav ul li {
+    float: left;
+    margin-left: 50px;
+    margin-top:0;
+	position: relative;
+}
+
+header nav .linker-area {
+	display: none;
+	width: 120px;
+	height: 15px;
+	position: absolute;
+	top:40px;
+	left: -25px;
+}
+
+header nav .linker-area .linker {
+	display: none;
+	background-color: black;
+	position: absolute;
+	top:5px;
+	left:45px;
+	width: 20px;
+	height: 20px;
+	transform: rotate(45deg);
+	z-index: 4;
+}
+
+header nav ul li:hover .linker-area {
+	display:block;
+}
+
+header nav ul li:hover .drop-down {
+	display:block;
+}
+
+header nav ul li:hover .linker {
+	display: block;
+}
+
+header nav .drop-down {
+    display:none;
+	position: absolute;
+	width: 120px;
+	height:100px;
+	background-color: black;
+	color: white;
+	top:52px;
+	left: -25px;
+}
+
+header nav .drop-down ul {
+	font-size: 10px;
+	margin-left: -30px;
+}
+
+header nav .drop-down ul li:first-of-type {
+	margin-top:5px;
+}
+
+header nav .drop-down ul li {
+	margin-top:-15px;
+}
+/* Sekcja intro */
+
+
+#intro {
+    background-image: linear-gradient(180deg, #fafafa, #f7f7f7, #f6f6f6, #ececee, #d1d0d8);
+
+}
+
+#intro .left-arrow {
+    width: 50px;
+    font-size: 100px;
+    color: #26bfa1;
+    float:left;
+    margin-top: 180px;
+    position: absolute;
+    top: -90px;
+
+}
+
+#intro .sit-on-chair {
+    float: left;
+    text-align: center;
+    margin-top: 130px;
+    margin-left: 0px;
+    position:relative;
+    top:-80px;
+    left:0px;
+}
+
+#intro .sit-on-chair h1 {
+    text-transform: uppercase;
+    word-spacing: 3px;
+    font-size: 40px;
+	  font-weight:500;
+}
+
+#intro .sit-on-chair h1 span {
+    color: #26bfa1;
+	font-weight:600;
+}
+
+#intro .sit-on-chair p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+#intro .sit-on-chair button {
+    color: white;
+    background-color: #26bfa1;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+
+}
+
+
+
+#intro .right-arrow {
+	width: 50px;
+    font-size: 100px;
+    color: #26bfa1;
+    float:right;
+    margin-top: 180px;
+    position:relative; top:-90px;
+
+}
+
+#intro img {
+  float: left;
+}
+
+/* Gellery */
+
+#gallery {
+	background-color: white;
+	min-height: 200px;
+	padding-bottom: 70px;
+}
+
+#gallery .gallery-box {
+	float: left;
+	border: 1px solid #dbdbdb;
+    width: 330px;
+    height: 220px;
+    margin: 20px 10px;
+    background: white url("") center / cover no-repeat;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#gallery .gallery-box1 {
+	background: white url("../images/box1_img.jpg") center / cover no-repeat;
+	position: relative;
+
+}
+
+#gallery .gallery-box2 {
+	background: white url("../images/box2_img.jpg") center / cover no-repeat;
+	position: relative;
+
+}
+
+#gallery .gallery-box:nth-child(3) {
+	height: 250px;
+}
+
+#gallery .gallery-box p:first-child {
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 0.3em  solid #26bfa1;
+	width: 50%;
+}
+
+#gallery .gallery-box p:nth-child(2) {
+	margin-top: 15px;
+}
+
+#gallery .gallery-box p:nth-child(3) {
+	margin-top: 30px;
+}
+
+#gallery .product-name1 {
+	color: black;
+	width: 328px;
+	height: 60px;
+	position: absolute;
+	left:0;
+	top:145px;
+	background-color: rgba(237, 233, 230, 0.5);
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+#gallery .product-name2 {
+	color: black;
+	width: 328px;
+	height: 60px;
+	position: absolute;
+	top:145px;
+	left:0;
+	background-color: rgba(213, 213, 213, 0.3);
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+/*.hide {
+	visibility: hidden;
+}*/
+
+#gallery .product-name1 p {
+	border-bottom: 6px solid #26bfa1;
+	width: 35%;
+}
+
+#gallery .product-name2 p {
+	border-bottom: 6px solid #26bfa1;
+	width: 45%;
+}
+
+
+/* Plany sprzedazowe */
+
+.section-2{
+clear:both;
+background-color: white;
+width:100%;
+height:300px;
+}
+
+.white-box_1{
+height:200px;
+width:32%;
+display:inline-block;
+margin-top:40px;
+margin-right:10px;
+float: left;
+position: relative;
+}
+
+
+.white-box_2{
+height:200px;
+width:32%;
+display:inline-block;
+margin-top:40px;
+margin-right:10px;
+float: left;
+}
+
+.white-box_3 h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.white-box_3{
+height:230px;
+width:30%;
+display:inline-block;
+border: 1px solid black;
+float: left;
+margin-top: 40px;
+font-family: 'ralewayregular';
+src: url('raleway-regular-webfont.woff2') format('woff2'),
+     url('raleway-regular-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+
+#price {
+  background-color: #f1f1f1;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#price {
+  background-color: #f1f1f1;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+
+#price .label-price {
+	font-size: 20px;
+	text-transform: uppercase;
+	border-bottom: 6px solid #26bfa1;
+	width: 30%;
+	margin-left: 10px;
+}
+
+#price .price-box {
+	border: 2px solid #dbdbdb;
+	width: 330px;
+	height: 500px;
+	background-color: #f8f8f8;
+	margin:75px 10px;
+	float: left;
+	position:relative;
+	text-align: center;
+	cursor: pointer;
+}
+
+#price .price-box:hover {
+    background-color: #27c7ab;
+	border: 4px solid #27c7ab;
+}
+
+#price .price-box:hover .grey-circle {
+    background-color: white;
+	border: none;
+}
+
+#price .price-box:hover .white-circle {
+    background-color: #27c7ab;
+	border: none;
+}
+
+#price .price-box:hover .circle-price{
+  background:white;
+  border: none;
+}
+#price  .container .price-box:hover  .circle-price  p{
+  color:#27c7ab;
+}
+#price .price-box:hover h1{
+  color:white;
+}
+#price .container .price-box:hover  button{
+  background:white;
+  color:#27c7ab;
+}
+
+#price .price-box .white-circle {
+	height: 55px;
+	width: 55px;
+	background-color: #f8f8f8;
+	border-radius: 100%;
+	border: 2px solid #dbdbdb;
+	position: absolute;
+	top:-35px;
+	left: 136px;
+}
+
+#price .price-box .grey-circle {
+	height: 25px;
+	width: 25px;
+	background-color: #c2c2c2;
+	border-radius: 100%;
+	border: 2px solid #dbdbdb;
+	position: absolute;
+	top:-20px;
+	left: 151px;
+}
+
+#price .price-box h1 {
+	text-transform: uppercase;
+	color: #26bfa1;
+	font-weight: normal;
+	margin-top: 30px;
+}
+
+#price .price-box .circle-price {
+	border-radius: 100%;
+	border: 2px solid #dbdbdb;
+	width: 130px;
+	height: 130px;
+	margin-top: 50px;
+	position: absolute;
+	top:30px;
+	left: 100px;
+	background-color: white;
+	text-align: center;
+}
+
+#price .price-box .circle-price p:first-of-type {
+	background-color: transparent;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #c7c7c7;
+}
+
+#price .price-box .circle-price span {
+	font-size: 16px;
+	vertical-align:text-top;
+}
+
+#price .price-box .circle-price p:nth-of-type(2) {
+	background-color: transparent;
+	margin-top: -15px;
+	font-size: 16px;
+	color: #c7c7c7;
+}
+
+#price .price-box p {
+	font-size: 20px;
+	padding: 10px 25px;
+}
+
+#price .price-box p:first-of-type {
+	background-color: #e4e4e4;
+	color: #909090;
+	margin-top: 185px;
+}
+
+#price .price-box p:nth-of-type(2) {
+	background-color: #f1f1f1;
+	color: #8c8c8c;
+}
+
+#price .price-box p:nth-of-type(3) {
+	background-color: #e4e4e4;
+	color: #909090;
+}
+
+#price .price-box p:nth-of-type(4) {
+	background-color: #f1f1f1;
+	color: #8c8c8c;
+}
+
+#price .price-box button {
+	font-size: 15px;
+	color:white;
+	padding: 10px 30px;
+	border-radius:10px;
+	background-color:#26bfa1;
+	border: none;
+	position: absolute;
+	bottom: 20px;
+	left:100px;
+	cursor: pointer;
+}
+
+/*Formularz */
+#form .formularz {
+  float:left;
+}
+
+
+#form .label-price
+{
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: 6px solid #26bfa1;
+  width: 30%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#form .formularz input
+{
+width: 500px;
+height: 50px;
+margin-top: 20px;
+margin-left: 10px;
+border: 1px solid  #26bfa1;
+font-family: 'Raleway';
+	font-size:25px;
+
+}
+
+
+#form form textarea {
+  font-family: 'Raleway';
+	width: 500px;
+	height: 190px;
+	border:1px solid #24ba9f;
+	resize: none;
+	padding:15px;
+	padding-left: 10px;
+	margin-left: 10px;
+  margin-top: 20px;
+	font-size:25px;
+
+}
+
+#form .formularz p  {
+margin-top: 120px;
+color: grey;
+opacity: 0.5;
+}
+
+#form .formularz {
+float: left;
+}
+
+
+#form .right-chair {
+  float:left;
+  margin-left: 100px;}
+
+
+
+#right-section img {
+  position: absolute;
+}
+
+#right-section .check-box {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  -webkit-appearance:button;
+  -moz-appearance:button;
+  background-color:#ffffff;
+  white-space: nowrap;
+    border: 1px solid #26bfa1;
+    display: inline-block;
+    z-index: 5;
+  top: 235px;
+
+
+}
+
+#right-section .check-box:checked {
+	background-image: url('../images/form_ok.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+#right-section p {
+display: inline-block;
+position: relative;
+top: 230px;
+opacity: 0.5;
+}
+
+#right-section .button-sent {
+  position: relative;
+  top: 280px;
+  right: 280px;
+  color: white;
+  background-color: #26bfa1;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+
+}
+
+.right-section-footer {
+margin-right: 300px;
+}
+
+#footer p
+{
+margin-left: 50px;
+float: left;
+}
+#footer ul {
+  position: relative;
+  bottom: 10px
+}
+#footer li {
+  display: inline;
+  float: right;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#footer .podpis
+{
+  position: relative;
+right: -50px;
+bottom: -20px;
+opacity: 0.7;
+color: grey;
+}
+
+#footer .podpis p span {
+
+}
