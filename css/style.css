@@ -563,10 +563,13 @@ float: left;
 }
 
 
-#form .right-chair {
-  float:left;
-  margin-left: 100px;}
+#right-section {
+}
 
+#right-section .right-chair {
+  float: left;
+  padding-left: 80px;
+}
 
 
 #right-section img {
@@ -624,6 +627,9 @@ opacity: 0.5;
 margin-right: 300px;
 }
 
+#footer {
+  margin-left: 60px;
+}
 #footer p
 {
 margin-left: 50px;
@@ -643,7 +649,7 @@ float: left;
 #footer .podpis
 {
   position: relative;
-right: -50px;
+right: -40px;
 bottom: -20px;
 opacity: 0.7;
 color: grey;
