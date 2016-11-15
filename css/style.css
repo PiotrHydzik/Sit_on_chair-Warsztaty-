@@ -14,11 +14,7 @@ html, body {
     margin: 0 auto;
 }
 
-.clearfix::before, .clearfix::after {
-content: "";
-display: table;
-clear:both;
-}
+
 
 section {
     width:100%;
